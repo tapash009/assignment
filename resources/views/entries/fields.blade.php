@@ -10,7 +10,13 @@
     {!! Form::textarea('entry', null, ['class' => 'form-control']) !!}
 </div>
 
-@push('scripts')
+<!-- Submit Field -->
+<div class="form-group col-sm-12">
+    {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
+    <a href="{{ route('entries.index') }}" class="btn btn-default">Cancel</a>
+</div>
+
+@section('scripts')
     <script type="text/javascript">
         $('#entry_date').datetimepicker({
             format: 'YYYY-MM-DD',
@@ -18,10 +24,4 @@
             sideBySide: true
         })
     </script>
-@endpush
-
-<!-- Submit Field -->
-<div class="form-group col-sm-12">
-    {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
-    <a href="{{ route('entries.index') }}" class="btn btn-default">Cancel</a>
-</div>
+@endsection
