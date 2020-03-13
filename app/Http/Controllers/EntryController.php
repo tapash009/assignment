@@ -21,8 +21,10 @@ class EntryController extends Controller
     public function index(Request $request)
     {
         /** @var Entry $entries */
-        $entries = Entry::withTrashed()->where('user_id',auth()->user()->id)->paginate(20);
-
+        $entries = Entry::withTrashed()->where('user_id',auth()->user()->id)->orderBy('entry_date', 'desc')->paginate(5);
+        if($request->view){
+            session(['view' => $request->view]);
+        }
         return view('entries.index')
             ->with('entries', $entries);
     }

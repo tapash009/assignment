@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Mar 12, 2020 at 11:32 AM
+-- Generation Time: Mar 13, 2020 at 10:49 AM
 -- Server version: 5.7.28-0ubuntu0.19.04.2
 -- PHP Version: 7.3.14-1+ubuntu19.04.1+deb.sury.org+1
 
@@ -41,12 +41,13 @@ CREATE TABLE `entries` (
 --
 
 INSERT INTO `entries` (`id`, `user_id`, `created_at`, `updated_at`, `deleted_at`, `entry`, `entry_date`) VALUES
-(1, 00000000000000000001, NULL, '2020-03-11 18:57:16', NULL, 'zczc \r\nasdasdasd', '2020-03-13'),
-(2, 00000000000000000001, NULL, '2020-03-11 18:57:26', NULL, 'zczc \r\nasdasdasd', '2020-03-13'),
-(3, 00000000000000000001, '2020-03-11 13:22:43', '2020-03-11 13:22:43', NULL, 'asdasdasd\r\nasdas\r\nda\r\nsda\r\nsd\r\nasd', '2020-03-18'),
-(4, 00000000000000000001, '2020-03-11 13:22:54', '2020-03-11 13:23:07', '2020-03-11 13:23:07', 'asdasdasd\r\ndasd\r\nasd\r\nasd\r\nas\r\ndads', '2020-03-12'),
-(5, 00000000000000000001, '2020-03-11 13:23:33', '2020-03-11 13:23:33', NULL, 'asdasd\r\nasd\r\nasd\r\nasd\r\nasdasdasdasdasd\r\nasdasdasdasd\r\nasdasd', '2020-03-11'),
-(6, 00000000000000000001, '2020-03-11 13:25:06', '2020-03-11 13:25:06', NULL, 'sdasdasd\r\nasdasd\r\nasdasd', '2020-03-13');
+(1, 00000000000000000001, NULL, '2020-03-13 05:14:27', NULL, 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', '2020-03-13'),
+(2, 00000000000000000001, NULL, '2020-03-13 05:14:51', NULL, 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn\'t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.', '2020-03-13'),
+(3, 00000000000000000001, '2020-03-11 13:22:43', '2020-03-13 05:14:33', NULL, 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', '2020-03-18'),
+(4, 00000000000000000001, '2020-03-11 13:22:54', '2020-03-13 05:14:48', '2020-03-11 13:23:07', 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn\'t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.', '2020-03-12'),
+(5, 00000000000000000001, '2020-03-11 13:23:33', '2020-03-13 05:14:36', NULL, 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', '2020-03-11'),
+(6, 00000000000000000001, '2020-03-11 13:25:06', '2020-03-13 05:15:07', NULL, 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).', '2020-03-13'),
+(7, 00000000000000000002, '2020-03-12 01:34:08', '2020-03-13 05:15:10', NULL, 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).', '2020-03-13');
 
 -- --------------------------------------------------------
 
@@ -118,7 +119,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Test User', 'userx@zero.com', NULL, '$2y$10$zWtUyTJr29.UzbOG35zoRusxDNqlS88aXN.SHECrNfPCIsjvX/o2y', NULL, '2020-03-11 12:30:58', '2020-03-11 12:30:58');
+(1, 'Test User', 'userx@zero.com', NULL, '$2y$10$zWtUyTJr29.UzbOG35zoRusxDNqlS88aXN.SHECrNfPCIsjvX/o2y', NULL, '2020-03-11 12:30:58', '2020-03-11 12:30:58'),
+(2, 'Test User2', 'usery@zero.com', NULL, '$2y$10$zWtUyTJr29.UzbOG35zoRusxDNqlS88aXN.SHECrNfPCIsjvX/o2y', NULL, '2020-03-11 12:30:58', '2020-03-11 12:30:58');
 
 --
 -- Indexes for dumped tables
@@ -165,7 +167,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `entries`
 --
 ALTER TABLE `entries`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT for table `failed_jobs`
 --
@@ -180,7 +182,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- Constraints for dumped tables
 --

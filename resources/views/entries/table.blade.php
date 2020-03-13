@@ -12,7 +12,7 @@
         @foreach($entries as $entry)
             <tr class="{{$entry->deleted_at!=null?'deleted':''}}">
                 <td>{{ $entry->id }}</td>
-            <td>{{ $entry->entry }}</td>
+            <td>{{substr($entry->entry,0,25)}}{{(strlen($entry->entry)>25)?'...':''}}</td>
             <td>{{ $entry->entry_date->format('Y-m-d') }}</td>
                 <td>@if($entry->deleted_at)
                     <p>Deleted</p>
