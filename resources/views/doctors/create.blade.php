@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Create Entry</div>
+                <div class="card-header">Create New Doctor</div>
 
                 <div class="card-body">
                     <div class="content">
@@ -22,9 +22,9 @@
                         <div class="box box-primary">
                             <div class="box-body">
                                 <div class="row">
-                                    {!! Form::open(['route' => 'entries.store']) !!}
+                                    {!! Form::open(['route' => 'assignment4.store', 'class' => 'form-horizontal col-md-12']) !!}
 
-                                        @include('entries.fields')
+                                        @include('doctors.fields')
 
                                     {!! Form::close() !!}
                                 </div>

@@ -21,9 +21,9 @@
                        <div class="box box-primary">
                            <div class="box-body">
                                <div class="row">
-                                   {!! Form::model($entry, ['route' => ['entries.update', $entry->id], 'method' => 'patch']) !!}
+                                   {!! Form::model($doctor, ['route' => ['assignment4.update', $doctor->id], 'method' => 'patch', 'class' => 'form-horizontal col-md-12']) !!}
 
-                                        @include('entries.fields')
+                                        @include('doctors.fields')
 
                                    {!! Form::close() !!}
                                </div>

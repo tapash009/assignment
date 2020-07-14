@@ -1,13 +1,12 @@
 <?php
 
-namespace App\Http\Requests;
+namespace App\Http\Requests\DoctorRequest;
 
+use App\Models\Doctor;
 use Illuminate\Foundation\Http\FormRequest;
-use App\Models\Entry;
 
-class UpdateEntryRequest extends FormRequest
+class CreateDoctorRequest extends FormRequest
 {
-
     /**
      * Determine if the user is authorized to make this request.
      *
@@ -25,8 +24,6 @@ class UpdateEntryRequest extends FormRequest
      */
     public function rules()
     {
-        $rules = Entry::$rules;
-        
-        return $rules;
+        return Doctor::$rules;
     }
 }
