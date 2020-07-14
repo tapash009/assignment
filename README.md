@@ -1,5 +1,8 @@
 Project Setup
 ---------------
+This project was created in Laravel v7.<br>
+Please follow the instruction below to setup the project<br>
+
 **1. Git pull**<br>
 link
 

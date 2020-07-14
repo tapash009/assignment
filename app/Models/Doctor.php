@@ -29,6 +29,16 @@ class Doctor extends Model
         'created_at', 'updated_at'
     ];
 
+    function getStartTimeAttribute($value)
+    {
+        return $this->asDateTime($value)->format('H:i');
+    }
+
+    function getEndTimeAttribute($value)
+    {
+        return $this->asDateTime($value)->format('H:i');
+    }
+
     /**
      * Validation rules
      *
@@ -45,9 +55,9 @@ class Doctor extends Model
      *
      * @var array
      */
-    public static $updateRules = [
+    /*public static $updateRules = [
         'name' => 'required',
-        'start_time' => 'required|date_format:H:i:s',
-        'end_time' => 'required|date_format:H:i:s|after:start_time'
-    ];
+        'start_time' => 'required|date_format:H:i',
+        'end_time' => 'required|date_format:H:i|after:start_time'
+    ];*/
 }

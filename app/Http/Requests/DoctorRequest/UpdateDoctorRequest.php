@@ -24,7 +24,7 @@ class UpdateDoctorRequest extends FormRequest
      */
     public function rules()
     {
-        $rules = Doctor::$updateRules;
+        $rules = Doctor::$rules;
 
         return $rules;
     }
