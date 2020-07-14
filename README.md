@@ -4,7 +4,7 @@ This project was created in Laravel v7.<br>
 Please follow the instruction below to setup the project<br>
 
 **1. Git pull**<br>
-link
+`git clone https://github.com/tapash009/assignment.git`
 
 **2. Environment Files**<br>
 This package ships with a .env.example file in the root of the project. You must rename this file to just .env<br>
